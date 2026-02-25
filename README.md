@@ -76,10 +76,10 @@ reports/quality_report.md
 
 Example of cleaning:
 
--- raw data:
+-- raw data: \
 ELX-2026-01,R06,Lakeview,2026-01-12 18:05,60,61,A. Rivera,IND,4020,51.5%
 
---clean
+--clean: \
 election_id           = ELX-2026-01  
 region_id             = R06  
 region_name           = Lakeview  
@@ -91,10 +91,10 @@ party                 = IND
 votes                 = 4020  
 vote_share_recalc     = 0.515  
 
---raw data:
+--raw data: \
 ELX-2026-01,R09,Pinecrest,2026-01-12 20:33,55,55,A. Rivera,IND,0,0%
 
---clean:
+--clean: \
 election_id         = ELX-2026-01  
 region_id           = R09  
 region_name         = Pinecrest  
@@ -118,11 +118,11 @@ Analysis example:
 
 The cleaned output can be used directly for analysis.
 
--- run:
+-- run: \
 python analysis/top_regions.py
 
--- example output:
-region_name  candidate  votes
+-- example output: \
+region_name  candidate  votes \ 
 6   Central City    B. Chen  30500 \
 13     Northvale  A. Rivera  24900 \
 11    Meadowgate  A. Rivera  15980 \
@@ -137,6 +137,6 @@ region_name  candidate  votes
 ---------------------------------------------------------------------
 Testing:
 
---run from root:
+--run from root: \
 pytest
 
