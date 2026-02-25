@@ -58,7 +58,9 @@ Running the pipeline:
 -- set up the environment:
 python -m venv .venv
 .venv\Scripts\Activate.ps1   # Windows PowerShell
+
 or
+
 source .venv/bin/activate   # macOS/Linux
 
 pip install -r requirements.txt
@@ -70,7 +72,9 @@ python -m src.cleaning.run
 Output files:
 
 data/clean/election_results_clean.csv
+
 data/clean/election_results_clean.parquet
+
 reports/quality_report.md
 
 
@@ -122,7 +126,8 @@ The cleaned output can be used directly for analysis.
 python analysis/top_regions.py
 
 -- example output: \
-region_name  candidate  votes \ 
+region_name  candidate  votes \
+
 6   Central City    B. Chen  30500 \
 13     Northvale  A. Rivera  24900 \
 11    Meadowgate  A. Rivera  15980 \
